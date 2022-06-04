@@ -9,22 +9,12 @@ img {
 body {
   max-width: 100%;
   margin: 0 auto;
-  line-height: 1.4;
+  line-height: 1.5;
   background-color: #e6e3df;
   /* margin: 10px; */
 }
-/* section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
 
-/* .mig {
-  width: 100%;
-  grid-column: 1/2;
-  grid-row: 1/2;
-} */
-
-/* ===================menu ===========================*/
+/* ----------------- menu -----------------*/
 
 /* #menu {
   list-style-type: none;
@@ -34,6 +24,20 @@ body {
 a {
   text-decoration: none;
 }
+
+p {
+  margin: 20px;
+}
+
+h2 {
+  color: #4d5245;
+}
+
+.citat {
+  margin: 20px;
+}
+
+/* ----------------- mobile first -----------------*/
 
 @media (max-width: 600px) {
   header {
@@ -49,16 +53,35 @@ a {
     padding-right: 2rem;
   }
 
+  .headline {
+    color: #4d5245;
+    font-size: 1.2rem;
+  }
+
   .forsideboks {
     width: 26rem;
     padding-top: 10%;
   }
 
+  .tekst {
+    padding: 20px;
+  }
+  .foto {
+    padding: 20px;
+  }
+
   footer {
-    display: flex;
-    margin-left: 10px;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  footer > p {
+    text-align: center;
   }
 }
+
+/* ----------------- desktop  -----------------*/
 
 @media (min-width: 600px) {
   header {
@@ -69,7 +92,6 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
     padding: 1rem;
   }
 
@@ -87,30 +109,49 @@ a {
 
   .headline {
     color: #4d5245;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .forsideboks {
     width: 36rem;
-    padding-top: 13%;
+    padding-top: 6%;
   }
 
-  footer {
+  .forsidefooter {
     width: 100%;
     position: fixed;
     bottom: 0;
-    margin-bottom: 10px;
   }
   footer > p {
     text-align: center;
   }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tekst {
+    grid-column: 2;
+    padding-left: 10px;
+    padding-right: 100px;
+  }
+
+  .foto {
+    grid-column: 1;
+    grid-row: 1;
+    width: 80%;
+    padding-left: 90px;
+
+    padding-top: 17px;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+
+  .cv {
+    grid-column: 3;
+  }
 }
-/* nav ul {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0 auto;
-}  */
