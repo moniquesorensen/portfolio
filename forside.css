@@ -1,0 +1,53 @@
+.lilleboks {
+  width: 80%;
+  padding-top: 4%;
+  margin-top: 5rem;
+}
+
+.boks {
+  background-image: url(fotos/lilleboks.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.portraet {
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+/* .portraet {
+  width: 30%;
+  margin-top: 10.5rem;
+  margin-left: 8rem;
+} */
+
+/* @media (min-width: 900px) {
+  .lilleboks {
+    width: 80%;
+    padding-top: 4%;
+    margin-top: 5rem;
+  }
+
+  .portfolio {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+
+  .boks {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .portraet {
+    width: 30%;
+    margin-top: 10.5rem;
+    margin-left: 8rem;
+  }
+} */

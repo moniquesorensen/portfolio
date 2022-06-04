@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.4;
+  background-color: #e6e3df;
+  /* margin: 10px; */
+}
+/* section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* .mig {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+} */
+
+/* ===================menu ===========================*/
+
+/* #menu {
+  list-style-type: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+} */
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    margin: 10px;
+  }
+  nav ul {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    padding-right: 2rem;
+  }
+
+  .forsideboks {
+    width: 26rem;
+    padding-top: 10%;
+  }
+
+  footer {
+    display: flex;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+  }
+
+  .logooverskrift {
+    width: 50%;
+  }
+  nav ul {
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+    justify-content: right;
+    list-style: none;
+    text-align: center;
+  }
+
+  .headline {
+    color: #4d5245;
+    font-size: 2rem;
+  }
+
+  .forsideboks {
+    width: 36rem;
+    padding-top: 13%;
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+  footer > p {
+    text-align: center;
+  }
+}
+/* nav ul {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0 auto;
+}  */
