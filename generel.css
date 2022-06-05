@@ -16,10 +16,9 @@ body {
 
 /* ----------------- menu -----------------*/
 
-/* #menu {
-  list-style-type: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
+.links {
+  font-family: "Orbitron", sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -27,13 +26,34 @@ a {
 
 p {
   margin: 20px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+h1 {
+  color: #4d5245;
+  font-family: "Poiret One";
 }
 
 h2 {
   color: #4d5245;
+  font-family: "Poiret One";
+}
+
+h3 {
+  color: #4d5245;
+  font-family: "Poiret One";
+  margin: 20px;
+}
+
+.p1 {
+  padding-left: 25px;
 }
 
 .citat {
+  margin: 20px;
+}
+
+.cvoverskrift {
   margin: 20px;
 }
 
@@ -70,14 +90,27 @@ h2 {
     padding: 20px;
   }
 
+  .cvtitler {
+    font-size: 1rem;
+  }
+
   footer {
     width: 100%;
     bottom: 0;
     margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.5rem;
   }
 
   footer > p {
     text-align: center;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .forsidefooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
   }
 }
 
@@ -122,8 +155,10 @@ h2 {
     position: fixed;
     bottom: 0;
   }
+
   footer > p {
     text-align: center;
+    font-family: "Orbitron", sans-serif;
   }
 
   .grid_1-1 {
@@ -148,10 +183,21 @@ h2 {
 
   .grid_1-2 {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .cv {
-    grid-column: 3;
+    grid-column: 2;
+  }
+
+  .forsidefooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  footer > p {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
   }
 }
