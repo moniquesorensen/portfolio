@@ -14,7 +14,12 @@ body {
   /* margin: 10px; */
 }
 
-/* ----------------- menu -----------------*/
+main {
+  margin: auto;
+  max-width: 1150px;
+}
+
+/* ----------------- menu mm. -----------------*/
 
 .links {
   font-family: "Orbitron", sans-serif;
@@ -57,9 +62,13 @@ h3 {
   margin: 20px;
 }
 
+/* -----------------  hover effekt -----------------*/
+
 /* ----------------- mobile first -----------------*/
 
 @media (max-width: 600px) {
+  /* ----------------- generelt-----------------*/
+
   header {
     margin: 10px;
   }
@@ -76,22 +85,6 @@ h3 {
   .headline {
     color: #4d5245;
     font-size: 1.2rem;
-  }
-
-  .forsideboks {
-    width: 26rem;
-    padding-top: 10%;
-  }
-
-  .tekst {
-    padding: 20px;
-  }
-  .foto {
-    padding: 20px;
-  }
-
-  .cvtitler {
-    font-size: 1rem;
   }
 
   footer {
@@ -112,11 +105,42 @@ h3 {
     position: fixed;
     bottom: 0;
   }
+
+  /* ----------------- forside -----------------*/
+
+  .forsideboks {
+    width: 26rem;
+    padding-top: 10%;
+  }
+
+  /* ----------------- OM MIG -----------------*/
+  .tekst {
+    padding: 20px;
+  }
+  .foto {
+    padding: 20px;
+  }
+
+  .cvtitler {
+    font-size: 1rem;
+  }
+
+  /* ----------------- portfolio oversigt -----------------*/
+  .tekst1,
+  .tekst2,
+  .tekst3,
+  .tekst4 {
+    color: #4d5245;
+    font-family: "poiret One";
+    margin: 20px;
+  }
 }
 
 /* ----------------- desktop  -----------------*/
 
 @media (min-width: 600px) {
+  /* ----------------- generelt-----------------*/
+
   header {
     display: flex;
     flex-flow: wrap;
@@ -161,6 +185,7 @@ h3 {
     font-family: "Orbitron", sans-serif;
   }
 
+  /* ----------------- OM MIG -----------------*/
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,14 +215,18 @@ h3 {
     grid-column: 2;
   }
 
-  .forsidefooter {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+  /* ----------------- portfolio oversigt -----------------*/
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  footer > p {
-    text-align: center;
-    font-family: "Orbitron", sans-serif;
+  .tekst1,
+  .tekst2,
+  .tekst3,
+  .tekst4 {
+    color: #4d5245;
+    font-family: "poiret One";
+    padding-left: 90px;
   }
 }
