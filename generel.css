@@ -150,6 +150,8 @@ h3 {
     margin: 20px;
   }
 
+  /* ----------------- tema 02 -----------------*/
+
   .opgaver,
   .opgavelinks,
   .billede,
@@ -163,6 +165,18 @@ h3 {
   .underemne,
   .underemne2 {
     padding-top: 70px;
+  }
+
+  /* ----------------- tema 03 -----------------*/
+  #grid_3-1,
+  #grid_2-2 {
+    padding-top: 30px;
+    margin: 20px;
+  }
+
+  .underemne03_1,
+  .opgaver03 {
+    margin: 20px;
   }
 }
 
@@ -246,10 +260,32 @@ h3 {
   }
 
   /* ----------------- portfolio oversigt -----------------*/
-  .section1 {
+
+  #grid_0-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .row_web {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .row_ux {
+    grid-column: 3;
+  }
+
+  .row_animation {
+    grid-column: 2;
+    grid-row: 2/2;
+  }
+
+  .row_indhold {
+    grid-row: 3;
+  }
+  .row_portfolio {
+    grid-column: 3;
+    grid-row: 3/4;
   }
 
   .tekst1,
@@ -292,5 +328,34 @@ h3 {
   .underemne2 {
     grid-column: 1;
     padding-top: 100px;
+  }
+
+  /* ----------------- tema 03 -----------------*/
+  #grid_3-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 80px;
+    padding-left: 100px;
+  }
+
+  .text1 {
+    grid-column: 1;
+  }
+
+  .underemne03_1 {
+    grid-column: 1;
+    margin: 20px;
+  }
+
+  .billeder03 {
+    padding-left: 10px;
+  }
+
+  .opgaver03 {
+    padding-left: 30px;
+  }
+
+  .uxfooter {
+    padding-top: 20px;
   }
 }
