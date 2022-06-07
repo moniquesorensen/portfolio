@@ -25,6 +25,9 @@ main {
   font-family: "Orbitron", sans-serif;
 }
 
+.opgavelinks {
+  font-family: "Rajdhani", sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -37,6 +40,8 @@ p {
 h1 {
   color: #4d5245;
   font-family: "Poiret One";
+  margin: 17px;
+  font-size: 2rem;
 }
 
 h2 {
@@ -60,6 +65,10 @@ h3 {
 
 .cvoverskrift {
   margin: 20px;
+}
+
+.emne {
+  padding-top: 30px;
 }
 
 /* -----------------  hover effekt -----------------*/
@@ -106,6 +115,11 @@ h3 {
     bottom: 0;
   }
 
+  .portfoliofooter {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+  }
+
   /* ----------------- forside -----------------*/
 
   .forsideboks {
@@ -129,10 +143,26 @@ h3 {
   .tekst1,
   .tekst2,
   .tekst3,
-  .tekst4 {
+  .tekst4,
+  .tekst5 {
     color: #4d5245;
     font-family: "poiret One";
     margin: 20px;
+  }
+
+  .opgaver,
+  .opgavelinks,
+  .billede,
+  .underemne,
+  .moodboard,
+  .underemne2,
+  .pixel {
+    margin: 20px;
+  }
+
+  .underemne,
+  .underemne2 {
+    padding-top: 70px;
   }
 }
 
@@ -219,14 +249,48 @@ h3 {
   .section1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .tekst1,
   .tekst2,
   .tekst3,
-  .tekst4 {
+  .tekst4,
+  .tekst5 {
     color: #4d5245;
     font-family: "poiret One";
     padding-left: 90px;
+  }
+
+  /* ----------------- tema 02 -----------------*/
+  #grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .introtekst02,
+  .tekster,
+  .fase3 {
+    grid-column: 1;
+    font-size: 1.05rem;
+  }
+
+  .billede,
+  .moodboard,
+  .pixel {
+    grid-column: 2;
+    width: 100%;
+  }
+  .opgaver,
+  .moodboard,
+  .underemne,
+  .underemne2 {
+    margin: 20px;
+  }
+
+  .underemne,
+  .underemne2 {
+    grid-column: 1;
+    padding-top: 100px;
   }
 }
