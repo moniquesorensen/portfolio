@@ -158,19 +158,24 @@ h3 {
   .underemne,
   .moodboard,
   .underemne2,
-  .pixel {
+  .pixel,
+  .underemne04,
+  .opgaver4_0,
+  .billedertema04_1 {
     margin: 20px;
   }
 
   .underemne,
-  .underemne2 {
+  .underemne2,
+  .underemne04 {
     padding-top: 70px;
   }
 
   /* ----------------- tema 03 -----------------*/
   #grid_3-1,
   #grid_2-2,
-  #grid_3-2 {
+  #grid_3-2,
+  #grid_4-1 {
     padding-top: 30px;
     margin: 20px;
   }
@@ -387,5 +392,39 @@ h3 {
 
   .billede04 {
     margin: 20px;
+  }
+
+  /* ----------------- tema 03 -----------------*/
+  #grid_4-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 80px;
+  }
+
+  .underemne04 {
+    grid-column: 1;
+    margin: 20px;
+  }
+
+  .text04 {
+    grid-column: 1;
+  }
+  .billedertema04_1 {
+    grid-column: 2;
+    padding-right: 5px;
+  }
+
+  .animationfooter {
+    padding-top: 20px;
+  }
+
+  .opgaver4_0 {
+    grid-column: 1;
+    padding-left: 30px;
+  }
+
+  .billedertema04_2 {
+    grid-column: 3;
+    padding-left: 5px;
   }
 }
