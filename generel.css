@@ -405,7 +405,7 @@ h3 {
     margin: 20px;
   }
 
-  /* ----------------- tema 03 -----------------*/
+  /* ----------------- tema 04 -----------------*/
   #grid_4-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -457,5 +457,28 @@ h3 {
   .img04 {
     width: 90%;
     padding-left: 116px;
+  }
+
+  /* ----------------- tema 05 -----------------*/
+
+  #grid05 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .text05 {
+    grid-column: 1;
+  }
+
+  .underemne05 {
+    grid-column: 1;
+    margin: 20px;
+  }
+
+  .opgaver05 {
+    padding: 15px;
   }
 }
