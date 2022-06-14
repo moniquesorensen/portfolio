@@ -195,8 +195,7 @@ h3 {
   .underemne2,
   .pixel,
   .underemne04,
-  .opgaver4_0,
-  .billedertema04_1 {
+  .opgaver4_0 {
     margin: 20px;
   }
 
@@ -214,7 +213,8 @@ h3 {
   #grid_4-2,
   #grid1,
   #grid05,
-  #grid5_1 {
+  #grid5_1,
+  #grid06 {
     padding-top: 30px;
     margin: 20px;
   }
@@ -232,7 +232,9 @@ h3 {
   .billede04,
   .billedertema04_2,
   .blomster,
-  .billeder05 {
+  .billeder05,
+  .underemne06,
+  .billedertema06 {
     margin: 20px;
   }
 
