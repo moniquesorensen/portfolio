@@ -16,7 +16,7 @@ body {
 
 main {
   margin: auto;
-  max-width: 1150px;
+  max-width: 1100px;
 }
 
 /* ----------------- menu mm. -----------------*/
@@ -27,6 +27,7 @@ main {
 
 .opgavelinks {
   font-family: "Rajdhani", sans-serif;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -46,7 +47,9 @@ h1 {
 
 h2 {
   color: #4d5245;
-  font-family: "Poiret One";
+  /* font-family: "Fira Sans Condensed", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
 }
 
 h3 {
@@ -71,6 +74,20 @@ h3 {
   padding-top: 30px;
 }
 
+.toggle-btn {
+  display: none;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  height: 44px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: "Orbitron", sans-serif;
+  color: #4d5245;
+}
+
 /* -----------------  hover effekt -----------------*/
 
 /* ----------------- mobile first -----------------*/
@@ -81,7 +98,22 @@ h3 {
   header {
     margin: 10px;
   }
-  nav ul {
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+  }
+
+  .nav ul {
     display: flex;
     align-items: stretch;
     gap: 20px;
@@ -149,6 +181,9 @@ h3 {
     font-family: "poiret One";
     margin: 20px;
   }
+  #grid_0-1 {
+    margin: 20px;
+  }
 
   /* ----------------- tema 02 -----------------*/
 
@@ -177,7 +212,9 @@ h3 {
   #grid_3-2,
   #grid_4-1,
   #grid_4-2,
-  #grid1 {
+  #grid1,
+  #grid05,
+  #grid5_1 {
     padding-top: 30px;
     margin: 20px;
   }
@@ -186,13 +223,16 @@ h3 {
   .opgaver03,
   .underemne03_2,
   .opgaver04,
-  .underemne4_2 {
-    margin: 20px;
-  }
-
+  .underemne4_2,
+  .underemne05,
+  .underemne05_2,
+  .opgaver005,
+  .opgaver05,
   .billeder03,
   .billede04,
-  .billedertema04_2 {
+  .billedertema04_2,
+  .blomster,
+  .billeder05 {
     margin: 20px;
   }
 
@@ -200,8 +240,6 @@ h3 {
     width: 95%;
     padding-left: 20px;
   }
-
-  /* ----------------- tema 03 -----------------*/
 }
 
 /* ----------------- desktop  -----------------*/
@@ -257,6 +295,7 @@ h3 {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
   }
 
   .tekst {
@@ -480,5 +519,47 @@ h3 {
 
   .opgaver05 {
     padding: 15px;
+  }
+
+  #grid5_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding-top: 80px;
+    padding-right: 50px;
+  }
+
+  .blomster {
+    grid-column: 1;
+    padding-left: 70px;
+  }
+
+  .opgaver005 {
+    padding-left: 30px;
+  }
+  .underemne05_2 {
+    padding-left: 20px;
+  }
+  .text5 {
+    grid-column: 3;
+  }
+
+  .indholdfooter {
+    padding-top: 20px;
+  }
+
+  /* ----------------- tema 06 -----------------*/
+
+  #grid06 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+  }
+
+  .underemne06 {
+    grid-column: 1;
+    margin: 20px;
+  }
+  .text06 {
+    grid-column: 1;
   }
 }
